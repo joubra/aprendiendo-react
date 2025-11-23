@@ -1,19 +1,31 @@
 import { useState } from 'react'
 import Props from './components/Props'
-// ...existing code...
-//import viteLogo from '/vite.svg'
-//import reactLogo from './assets/react.svg'
-// ...existing code...
+import Contador from './components/Contador';
+import Controles from './components/Controles';
+import InpuTexto from './components/InpuTexto';
+import Formulario from './components/Formulario';
+import MensajeCondicional from './components/MensajeCondicional';
 
-import './App.css'
+
 
 function App() {
+  const [contador, setcontador] = useState(0);
 
 
   return (
     <>
       <Props />
-    </>
+      <hr/> 
+      <Contador contador = {contador} />
+      <Controles contador={contador} setcontador={setcontador} />
+      <hr/>
+      <InpuTexto /> 
+      <hr/>
+      <Formulario />
+      <hr/>
+      <MensajeCondicional />
+        
+  </>
   )
 }
 

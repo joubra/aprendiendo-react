@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState}from 'react'
 
 const Props = () => {
+
   return (
     <div>
-      hola mundo
+      hola mundo shshs
     </div>
   )
 }
