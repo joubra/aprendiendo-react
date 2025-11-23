@@ -4,6 +4,7 @@ const Contador = () => {
   return (
     <div>
       <p> has echo clicv</p>
+      <button> incrementar</button>
     </div>
   )
 }
